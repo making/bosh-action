@@ -45,7 +45,7 @@ const docker = execFile(
         "-v", "/var/run/docker.sock:/var/run/docker.sock",
         "-v", "/home/runner/work/_temp/_github_home:/github/home",
         "-v", "/home/runner/work/_temp/_github_workflow:/github/workflow",
-        "-v", "/home/runner/work/athens-bosh-release/athens-bosh-release:/github/workspace",
+        "-v", "/home/runner/work/nexus-boshrelease/nexus-boshrelease:/github/workspace",
         // provide a non-layered scratch space on the host to avoid errors like:
         //  > Creating container: Error response from daemon: error creating aufs mount to /var/lib/docker/aufs/mnt/...snip...-init
         // related: https://github.com/cloudfoundry/bosh/pull/1698
